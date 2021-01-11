@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Cosmic Jellyfish </title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+        <a href="about.html" id="about_hover">About us</a>
+        <a href="crab.html" id="crab_hover">Japanese spider crab</a>
+        <a href="blobfish.html" id="blob_hover">Blobfish</a>
+        <a href="cosmicjelly.html"id="jelly_hover">Cosmic jellyfish</a>
+        <a href="goblinshark.html"id="shark_hover">Goblin shark</a>
+        <a href="dumbo.html"id="dumbo_hover">Dumbo octopus</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/yellowwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index.html"><img src="img/yellowlogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/cosmicjelly.png" alt="cosmic jellyfish" id="cosmicjelly_page">
+
+    <div class="animal_name_jelly">
+      <h1>cosmic jellyfish</h1>
+    </div></div>
+    <img src="img/cosmicjelly.png"  width="100"  id="scroll">
+    <div class="bio_container">
+      <div class="bio_content">
+        Hello! I don’t have a scientific name, because I’m that new to the world, but you can call me, Cosmic Jellyfish.
+        <p>I live 3000 metres deep in the ocean.</p>
+        <p>I can eat ten times my body weight in one day, my favourite bites are small animals.</p>
+        <p>I’m afraid of my own existence.</p>
+      </div>
+      <div class="appear">
+        <div class="title_jelly">Appearance</div>
+        Like most jellyfish, this majestic creature is a brainless blob, that floats around propelled by its many long, thin tentacles. 
+        <p>Its organs glow in the dark, with bright vibrant colours, giving it its name. The jellyfishes’ body is a soft jelly-like, housing all its organs. It has 6 yellow pockets on its side, thought to be for reproductive organs. </p>
+        In the bottom middle of the animal there is a red organ, thought to be for eating and digestion. 
+      </div>
+    </div>
+
+    <div class="secondline_info">
+      <div class="humanrelation">
+        <div class="humanjelly_title">Relation to humans</div>
+        What sets this species apart from the rest is just how little is known about it. 
+        A total of two recordings exist of the animal and almost all information on it is purely speculative.
+        <p>No attempt has been made to capture this animal and find out more about it, as its population is thought to be in the single digits.</p>
+      </div>
+      <div class="map">
+        <img src="img/jellymap.png" alt="Habitat of cosmic jellyfish" id="jellymap">
+      </div>
+    </div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

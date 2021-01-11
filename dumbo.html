@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Dumbo Octopus</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+        <a href="about.html" id="about_hover">About us</a>
+        <a href="crab.html" id="crab_hover">Japanese spider crab</a>
+        <a href="blobfish.html" id="blob_hover">Blobfish</a>
+        <a href="cosmicjelly.html"id="jelly_hover">Cosmic jellyfish</a>
+        <a href="goblinshark.html"id="shark_hover">Goblin shark</a>
+        <a href="dumbo.html"id="dumbo_hover">Dumbo octopus</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/pinkwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index.html"><img src="img/pinklogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/dumbo.png" alt="dumbo octopus" id="dumbo_octapus_page">
+
+    <div class="animal_name_dumbo">
+      <h1>Dumbo Octopus</h1>
+    </div></div>
+
+    <img src="img/dumbo.png"  width="100" id="scroll">
+
+     <!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Hi! My name is Grimpoteuthis, but people often refer to me as Dumbo Octopus, because I remind them of the baby elephant named Dumbo in a 1941 Disney film. 
+    <p> I live 1000 to 7000 metres deep in the ocean.  </p>
+    <p>I love eating small worms, planktons and shellfish. </p>
+    <p>I’m so scared of sharks, that I most of the time camouflage myself to blend into the appearance of the ocean floor.  </p>
+    
+  </div>
+  <div class="appear">
+    <div class="title_dumbo">Appearance</div>
+    Dumbo octopus is known for its prominent ear-like fin which extends above its eyes. 
+    This animal is capable of changing its color from pink to red, brown or white.
+     They commonly weigh one kilogram and their length is around 30 centimeters. Their average lifespan is between three to five years.
+      It hasn’t been proven that the Dumbo octopus produces ink for jet-propulsion, which makes sense considering its habitat.
+       It swims by using the movement of its fins. 
+    Another distinct characteristic Dumbo octopuses have are their white spots near above their eyes, which detect light. 
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humandumbo_title">Relation to humans</div>
+    Humans aren’t considered as a threat to Dumbo octopuses, because they live that deep in the ocean. 
+    Their population is quite healthy and they aren’t considered endangered.
+  </div>
+  <div class="map">
+    <img src="img/dumbomap.png" alt="Habitat of dumbo octopus" id="dumbomap">
+  </div>
+</div>
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

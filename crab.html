@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Japanese Spider Crab</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+        <a href="about.html" id="about_hover">About us</a>
+        <a href="crab.html" id="crab_hover">Japanese spider crab</a>
+        <a href="blobfish.html" id="blob_hover">Blobfish</a>
+        <a href="cosmicjelly.html"id="jelly_hover">Cosmic jellyfish</a>
+        <a href="goblinshark.html"id="shark_hover">Goblin shark</a>
+        <a href="dumbo.html"id="dumbo_hover">Dumbo octopus</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/redwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index.html"><img src="img/redlogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/japanesecrab.png" alt="japanese spider crab" id="japanese_crab_page">
+    <div class="animal_name_crab">
+      <h1>japanese spider crab</h1>
+    </div>
+  </div>
+
+
+  <img src="img/japanesecrab.png"  width="100"  id="scroll" alt="japanese spider crab">
+
+
+
+<!--information-->
+<div class="information">
+<div class="bio_container">
+  <div class="bio_content">
+    Hi! I’m a Japanese Spider Crab and my name can also be Macrocheira kaempferi.
+    <p> I live around 600 metres deep.</p>
+    <p>I like eating plants, algae and small animals, like mollusks. </p>
+    <p>I’m especially afraid of fishermen and octopuses, because I’m extremely vulnerable, when I’m moulting my shell.</p>
+  </div>
+  <div class="appear">
+    <div class="title_crab">Appearance</div>
+    With a lifespan of 100 years, the Japanese spider crab has a lot of time to grow. 
+    An average fully grown crab weighs around 19 kilograms and can be 3 meters from end to end if it were to stretch its legs out fully. 
+    The crab’s limbs are very fragile throughout its whole life.
+     It’s common to find spider crabs with even three or four limbs missing, dragging themselves along the seafloor.
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humancrab_title">Relation to humans</div>
+    The population of the Japanese spider crab is slowly decreasing, but it hasn’t reached the level of endangerment yet.
+     Japanese folklore portrays these creatures as giant sea monsters that would drag sailors off their ships to never return. </p>
+  </div>
+  <div class="map">
+    <img src="img/crabmap.png" alt="Habitat of japanese spider crab" id="crabmap">
+  </div>
+</div>
+</div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

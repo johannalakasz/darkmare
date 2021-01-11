@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Blobfish</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+        <a href="about.html" id="about_hover">About us</a>
+        <a href="crab.html" id="crab_hover">Japanese spider crab</a>
+        <a href="blobfish.html" id="blob_hover">Blobfish</a>
+        <a href="cosmicjelly.html"id="jelly_hover">Cosmic jellyfish</a>
+        <a href="goblinshark.html"id="shark_hover">Goblin shark</a>
+        <a href="dumbo.html"id="dumbo_hover">Dumbo octopus</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/tealwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index.html"><img src="img/teallogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/blubfish.png" alt="blobfish" id="blob_fish_page">
+
+    <div class="animal_name_blob">
+      <h1>blobfish</h1>
+    </div></div>
+    <img src="img/blubfish.png"  width="100"  id="scroll">
+<!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Hello, My name is Psychrolutes marcidus.
+    <p> I live 600 - 1200 m underwater, under pressure. </p>
+    <p>I eat everything that is in my way and is small enough for my mouth, mainly crabs, mollusks. </p>
+    <p>I’m afraid of overfishing, accidentally being caught and air. </p>
+  </div>
+  <div class="appear">
+    <div class="title_blob">Appearance</div>
+    The blobfish has completely different anatomy than the average fish.
+     These creatures don’t have a full skeleton or muscles, nor scales.
+      They have blobby bodies with lower density than water, that’s why they are floating above the seafloor. 
+      A grown adult weighs around 9 kilos and is usually around 30 cm long. 
+      The reproduction rate is really slow, but they can live up to 130 years.
+     In its natural habitat blobfish looks like completely normal fish, but when taken out of the pressure that the water is creating, their skin gets damaged and the body collapses in the form of a blob.
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humanblob_title">Relation to humans</div>
+    Blobfish has acid in it’s skin, therefore it is not edible for humans, but even without that threat, blobfish’s main predators are fishermen, who time after time accidentally catch them in their nets. 
+    People have named this creature as the world’s ugliest animal. </p>
+  </div>
+  <div class="map">
+    <img src="img/blobmap.png" alt="Habitat of blobfish" id="blobmap">
+  </div>
+</div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About us</title>
+    
+    
+</head>
+<body>
+    <div class="navigation">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="contents">
+            <a href="about.html" id="about_hover">About us</a>
+            <a href="crab.html" id="crab_hover">Japanese spider crab</a>
+            <a href="blobfish.html" id="blob_hover">Blobfish</a>
+            <a href="cosmicjelly.html"id="jelly_hover">Cosmic jellyfish</a>
+            <a href="goblinshark.html"id="shark_hover">Goblin shark</a>
+            <a href="dumbo.html"id="dumbo_hover">Dumbo octopus</a>
+          </div>
+          </div>
+          <div id="main">
+            <div id="menu-toggle"  onclick="openNav()">
+               <img id="wave" src="img/wave.png">
+            </div>
+         </div>
+      </div>
+            <!--return home-->
+    <div class="home">
+      <a href="index.html" ><img id="home" src="img/home2.png"></a>
+    </div>
+            <!--logo on top-->
+    <div class='logo1'>
+      <a href="index.html"><img src="img/logo.png" alt="logo" id="logo1"></a>
+    </div>
+    
+<div class="team">
+   <div class="person"><a href="https://www.facebook.com/johanna.lakasz" >
+     <img src="img/hanna3.png" alt="Hanna" id="memb"></a>
+     <div class="name">Hanna</div>
+    </div>
+   <div class="person"><a href="https://www.facebook.com/evina.grigorjeva/" >
+     <img src="img/evina.png" alt="Evina" id="memb"></a>
+     <div class="name">Evina</div>
+     </div>
+   <div class="person"><a href="https://www.facebook.com/mads.bundgaardisen" >
+     <img src="img/mads.png" alt="Mads" id="memb"></a>
+     <div class="name">Mads</div>
+   </div>
+   <div class="person"><a href="https://www.facebook.com/volkan.yilmaz.106" >
+     <img src="img/volkan.png" alt="Volkan" id="memb"></a>
+     <div class="name">Volkan</div>
+   </div>
+</div>
+<div class="slide-top ">
+  Darkmare is an online educational website dedicated to provide extensive knowledge about various creatures inhabiting the waters too deep for the average human to explore. 
+  <br>We hope you enjoy your visit at our site as much as we enjoyed making it.
+</div>
+
+    <!-- particles.js container --> 
+<div id="particles-js"></div>
+<!-- particles.js lib --> 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/back.js"></script>
+
+<!--for opening and closing side nav-->
+<script>
+    AOS.init();
+   var navDrawer = false;
+ function openNav() {
+     if (navDrawer == false) {
+   document.getElementById("mySidenav").style.width = "100%";
+   navDrawer = true;  } 
+   else  {
+       closeNav()
+     }
+ }
+  function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+   document.getElementById("main").style.marginLeft= "0";
+   navDrawer = false;
+ }
+</script>
+
+
+</body>
+</html>
