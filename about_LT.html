@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Par mums</title>
+    
+    
+</head>
+<body>
+    <div class="navigation">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="contents">
+            <a href="about_LT.html" id="about_hover">Par mums</a>
+            <a href="crab_LT.html" id="crab_hover">Japānas zirnekļu krabis</a>
+            <a href="blobfish_LT.html" id="blob_hover">Blobzivs</a>
+            <a href="cosmicjelly_LT.html"id="jelly_hover">Kosmiskā medūza</a>
+            <a href="goblinshark_LT.html"id="shark_hover">Goblinhaizivs</a>
+            <a href="dumbo_LT.html"id="dumbo_hover">Dambo astoņkājis</a>
+          </div>
+          </div>
+          <div id="main">
+            <div id="menu-toggle"  onclick="openNav()">
+               <img id="wave" src="img/wave.png">
+            </div>
+         </div>
+      </div>
+            <!--return home-->
+    <div class="home">
+      <a href="index_LT.html" ><img id="home" src="img/home2.png"></a>
+    </div>
+            <!--logo on top-->
+    <div class='logo1'>
+      <a href="index_LT.html"><img src="img/logo.png" alt="logo" id="logo1"></a>
+    </div>
+    
+<div class="team">
+   <div class="person"><a href="https://www.facebook.com/johanna.lakasz" >
+     <img src="img/hanna3.png" alt="Hanna" id="memb"></a>
+     <div class="name">Hanna</div>
+    </div>
+   <div class="person"><a href="https://www.facebook.com/evina.grigorjeva/" >
+     <img src="img/evina.png" alt="Evina" id="memb"></a>
+     <div class="name">Evina</div>
+     </div>
+   <div class="person"><a href="https://www.facebook.com/mads.bundgaardisen" >
+     <img src="img/mads.png" alt="Mads" id="memb"></a>
+     <div class="name">Mads</div>
+   </div>
+   <div class="person"><a href="https://www.facebook.com/volkan.yilmaz.106" >
+     <img src="img/volkan.png" alt="Volkan" id="memb"></a>
+     <div class="name">Volkan</div>
+   </div>
+</div>
+<div class="slide-top ">
+  Darkmare ir izglītojoša mājaslapa, kas radīta, lai informētu tās apmeklētājus par dažādiem dziļūdens radījumiem. 
+  <br>Mēs ceram, ka jums bija patīkami apmeklēt mūsu mājaslapu tikpat patīkami kā mums bija to veidot. 
+</div>
+
+    <!-- particles.js container --> 
+<div id="particles-js"></div>
+<!-- particles.js lib --> 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/back.js"></script>
+
+<!--for opening and closing side nav-->
+<script>
+    AOS.init();
+   var navDrawer = false;
+ function openNav() {
+     if (navDrawer == false) {
+   document.getElementById("mySidenav").style.width = "100%";
+   navDrawer = true;  } 
+   else  {
+       closeNav()
+     }
+ }
+  function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+   document.getElementById("main").style.marginLeft= "0";
+   navDrawer = false;
+ }
+</script>
+
+
+</body>
+</html>

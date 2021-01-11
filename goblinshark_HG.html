@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Koboldcápa</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+          <a href="about_HG.html" id="about_hover">Rólunk</a>
+          <a href="crab_HG.html" id="crab_hover">Óriás japán rák</a>
+          <a href="blobfish_HG.html" id="blob_hover">Bluggyhal</a>
+          <a href="cosmicjelly_HG.html"id="jelly_hover">Kozmikus medúza</a>
+          <a href="goblinshark_HG.html"id="shark_hover">Koboldcápa</a>
+          <a href="dumbo_HG.html"id="dumbo_hover">Dumbó polip</a>
+        </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/bluewave.png">
+        </div>
+     </div>
+  </div>
+      <!--return home-->
+      <div class="home">
+        <a href="Index_HG.html" ><img id="home" src="img/home2.png"></a>
+    </div>
+        <!--logo on top-->
+<div class='logo1'>
+ <a href="Index_HG.html"><img src="img/bluelogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/goblinshark.png" alt="goblinshark" id="goblinskark_page">
+
+  <div class="animal_name_shark">
+      <h1>Koboldcápa</h1>
+  </div>
+</div>
+<img src="img/goblinshark.png"  width="100"  id="scroll">
+ <!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Szia! A nevem Mitsukurina owstoni.
+    <p> Legalább 1300 méter mélyen élek a tengerben. </p>
+    <p>Egyaránt táplálkozom nagy és kisebb halakkal is, mint például más cápákkal, rájákkal, tintahalakkal és rákokkal. </p>
+    <p>Nem félek semmitől. Nem állíthatsz meg.</p>
+  </div>
+  <div class="appear">
+    <div class="title_shark">Megjelenés</div>
+    A csúcsragadozó akár 210 kilogrammot is nyomhat és 3,7 méter hosszúra nőhet. 
+    Az állat leginkább figyelemre méltó tulajdonsága a szája. Képes leválasztani az állkapcsát és borotvaéles fogait gyanútlan zsákmányába fúrni. 
+    Mindazonáltal, hogy ragadozó, csupán más tengeri állatokkal táplálkozik. 
+    A koboldcápa csontváza meglepően kicsi a teljes testéhez képest, így viszonylag sok felesleges bőrrel is rendelkezik.
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humanshark_title">Emberekkel való viszony</div>
+    A koboldcápák általában csak véletlenül kerülnek lehalászásra. 
+    Voltak már példányaik, amiket kiállítás céljából kaptak el, de az állatok nem maradnak sokáig életben egy ember által teremtett környezetben. 
+    Ennek ellenére, ha az ember egyszer egy koboldcápa jelenlétébe kerülne, a helyzet rendkívül veszélyes lenne a teremtmény hatalmas mérete miatt.
+  </div>
+  <div class="map">
+    <img src="img/goblinmap.png" alt="Habitat of goblin shark" id="sharkmap">
+  </div>
+</div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

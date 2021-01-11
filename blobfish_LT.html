@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Blobzivs</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+          <a href="about_LT.html" id="about_hover">Par mums</a>
+          <a href="crab_LT.html" id="crab_hover">Japānas zirnekļu krabis</a>
+          <a href="blobfish_LT.html" id="blob_hover">Blobzivs</a>
+          <a href="cosmicjelly_LT.html"id="jelly_hover">Kosmiskā medūza</a>
+          <a href="goblinshark_LT.html"id="shark_hover">Goblinhaizivs</a>
+          <a href="dumbo_LT.html"id="dumbo_hover">Dambo astoņkājis</a>
+    </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/tealwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="Index_LT.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index_LT.html"><img src="img/teallogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/blubfish.png" alt="blobfish" id="blob_fish_page">
+
+    <div class="animal_name_blob">
+      <h1>Blobzivs</h1>
+    </div></div>
+    <img src="img/blubfish.png"  width="100"  id="scroll">
+<!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Sveiki, mani sauc Psychrolutes marcidus.
+    <p> Es dzīvoju 600 - 1200 m zem ūdens. </p>
+    <p>Es ēdu visu, kas pagadās man pa ceļam un ir pietiekami mazs manai mutei - krabjus, moluskus. </p>
+    <p>Es baidos no pārliekas zvejošanas, netīšām tikt noķertam un gaisa.
+  </div>
+  <div class="appear">
+    <div class="title_blob">Izskats</div>
+    Blobzivij ir pilnīgi citādāka anotomija kā lielākajai daļai zivju. 
+    Šie dzīvnieki ir bez skeleta, muskuļiem un zvīņām, tiem ir ķermeņi kā blobi ar zemāku blīvumu kā ūdens, tādēļ tie spēj peldēt virs jūras dibens. 
+    Pilnīgi izaudzis radījums sver aptuveni 9 kilogramus un ir parasti ap 30 cm garš. 
+    Vairošanās ātrums ir ļoti lēns, bet tie spēj dzīvot līdz pat 130 gadiem. 
+    Tās dabīgajā vidē Blobzivs izskatās kā normāla izskata zivs, bet, kad tā tiek izcelta ārā no spiediena, ko rada ūdens ap to jūras dzelmē, tās āda tiek ievainota un ķermenis sabrūk veidojot maisa formu.  
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humanblob_title">Attiecības ar cilvēku</div>
+    Blobzivis ādā ir toksīdi, kuru dēļ cilvēki nevar lietot uzturā šos radījumus, bet, neraugoties uz to,
+     Blobzivs galvenais ienaidnieks ir zvejnieki, kas to nejauši noķer savos zvejas tīklos. Cilvēki ir Blobzivi nosaukuši par pasaules neglītāko radījumu tās īpatnējā izskata dēļ. </p>
+  </div>
+  <div class="map">
+    <img src="img/blobmap.png" alt="Habitat of blobfish" id="blobmap">
+  </div>
+</div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

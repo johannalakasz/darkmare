@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Bluggyhal</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+        <a href="about_HG.html" id="about_hover">Rólunk</a>
+        <a href="crab_HG.html" id="crab_hover">Óriás japán rák</a>
+        <a href="blobfish_HG.html" id="blob_hover">Bluggyhal</a>
+        <a href="cosmicjelly_HG.html"id="jelly_hover">Kozmikus medúza</a>
+        <a href="goblinshark_HG.html"id="shark_hover">Koboldcápa</a>
+        <a href="dumbo_HG.html"id="dumbo_hover">Dumbó polip</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/tealwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index_HG.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index_HG.html"><img src="img/teallogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/blubfish.png" alt="blobfish" id="blob_fish_page">
+
+    <div class="animal_name_blob">
+      <h1>Bluggyhal</h1>
+    </div></div>
+    <img src="img/blubfish.png"  width="100"  id="scroll">
+<!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Szia, a nevem Psychrolutes marcidus.
+    <p> 600 - 1200 méter mélyen élek a tengerben, nagy nyomás alatt. </p>
+    <p>Bármit elfogyasztok, ami az utamba kerül és elég kicsi a számnak. Ezek főként rákok és puhatestűek. </p>
+    <p>Félek a túlhalászástól, hogy véletlenül kapnak el, illetve a levegőtől.
+    </p>
+  </div>
+  <div class="appear">
+    <div class="title_blob">Megjelenés</div>
+    A bluggyhalnak teljesen más a felépítése, mint bármelyik másik átlagos halnak.
+    Ezek a teremtmények nem rendelkeznek egy teljes csontvázzal vagy izmokkal és pikkelyekkel.
+    A testük sűrűsége alacsonyabb, mint a vízé, ezért képesek a tengerfenék felett lebegni.
+    Egy kifejlett, felnőtt példány kürölbelül 9 kilót nyom és általában 30 cm hosszú.
+    A hal szaporodása nagyon lassú, de akár 130 évig is életben van.
+    A természetes élőhelyén a bluggyhalak teljesen hétköznapi halként néznek ki, viszont ha kikerülnek a nyomás alól, amelyet a víz teremt, a bőrük megsérül és a testük egy paca formájában omlik össze.
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humanblob_title">Relation to humans</div>
+    A bluggyhalnak sav található a bőrében, ezáltal mérgező fogyasztása az emberek számára, de még ezt figyelembe véve is a legnagyobb fenyegetettségnek a faj a halászok által van kitéve, akik időről időre véletlenül fogják ki őket halászhálóikkal.
+    Az emberek ezt a teremtményt hívják a világ legcsúnyább állatának. </p>
+  </div>
+  <div class="map">
+    <img src="img/blobmap.png" alt="Habitat of blobfish" id="blobmap">
+  </div>
+</div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

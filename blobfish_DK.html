@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Blobfisk</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+          <a href="about_DK.html" id="about_hover">Om Os</a>
+          <a href="crab_DK.html" id="crab_hover">Japansk edderkoppekrabbe</a>
+          <a href="blobfish_DK.html" id="blob_hover">Blobfisk</a>
+          <a href="cosmicjelly_DK.html"id="jelly_hover">Kosmisk vandmænd</a>
+          <a href="goblinshark_DK.html"id="shark_hover">Goblin Haj</a>
+          <a href="dumbo_DK.html"id="dumbo_hover">Dumbo blæksprutte</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/tealwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index_DK.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index_DK.html"><img src="img/teallogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/blubfish.png" alt="blobfish" id="blob_fish_page">
+
+    <div class="animal_name_blob">
+      <h1>Blobfisk</h1>
+    </div></div>
+    <img src="img/blubfish.png"  width="100"  id="scroll">
+<!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Hej! Mit navn er Blobfisk
+    <p> Jeg bor 600 - 1200 meter under vandet med pres.  </p>
+    <p>Jeg spiser alt der er i min vej og er småt nok for min mund, hovedsageligt krabber og bløddyr </p>
+    <p>Jeg er bange for overfiskeri og ved uheld at trække vejret over vand.</p>
+  </div>
+  <div class="appear">
+    <div class="title_blob">Udseende</div>
+    Blobfish har en helt anden anatomi end den gennemsnitlige fisk.
+    Disse væsner har ikke et fuldt skeletc, muskler eller skalaer.
+    De har blobbylegemer med lavere tæthed end vand, det er derfor, de flyder over havbunden. 
+    En fuld vokset vejer omkring 9 kilo og er normalt omkring 30 cm lang.
+    Reproduktionshastigheden er virkelig langsom, men de kan leve op til 130 år.
+    I sin naturlige habitat ser blobfisken ud som helt normal fisk, men når den tages ud af det tryk, som vandet skaber, bliver deres hud beskadiget, og kroppen kollapser i form af en blob.  
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humanblob_title">Relation til mennesker</div>
+    Blobfisken har syre i huden og derfor er den ikke spiselig for mennesker, men selv uden denne trussel er blobfiskens trussel fiskere, der gang på gang ved et uheld fanger dem i deres garn.
+    Folk har navngivet denne skabning som verdens grimeste dyr. </p>
+  </div>
+  <div class="map">
+    <img src="img/blobmap.png" alt="Habitat of blobfish" id="blobmap">
+  </div>
+</div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

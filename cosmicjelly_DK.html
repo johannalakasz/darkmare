@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Kosmisk vandmænd </title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+          <a href="about_DK.html" id="about_hover">Om Os</a>
+          <a href="crab_DK.html" id="crab_hover">Japansk edderkoppekrabbe</a>
+          <a href="blobfish_DK.html" id="blob_hover">Blobfisk</a>
+          <a href="cosmicjelly_DK.html"id="jelly_hover">Kosmisk vandmænd</a>
+          <a href="goblinshark_DK.html"id="shark_hover">Goblin Haj</a>
+          <a href="dumbo_DK.html"id="dumbo_hover">Dumbo blæksprutte</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/yellowwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index_DK.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index_DK.html"><img src="img/yellowlogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/cosmicjelly.png" alt="cosmic jellyfish" id="cosmicjelly_page">
+
+    <div class="animal_name_jelly">
+      <h1>Kosmisk vandmænd</h1>
+    </div></div>
+    <img src="img/cosmicjelly.png"  width="100"  id="scroll">
+    <div class="bio_container">
+      <div class="bio_content">
+        Hej! Jeg har ikke et videnskabeligt navn, for jeg er så ny i verden, men du kan kalde mig Kosmisk vandmænd.
+        <p>Jeg lever 3000 meter dybt i havet.</p>
+        <p> Jeg kan spise 10 gange mine kropsvægt i en dag, mine favorit bider er små dyr</p>
+        <p>Jeg er bange for min egen eksistens.</p>
+      </div>
+      <div class="appear">
+        <div class="title_jelly">Udseende</div>
+        Som de fleste vandmænd er denne majestætiske væsen en hjerneløs klat, der flyder rundt fremdrevet af sine mange lange, tynde tentakler. 
+        <p>Dens organer lyser i mørket med lyse levende farver og giver det sit navn. Vandmænds krop er en blød gelélignende og huser alle dens organer. Den har 6 gule lommer på siden, menes at være for reproduktive organer. </p>
+        I den nederste midte af dyret er der et rødt organ, der antages at være til spisning og fordøjelse. 
+      </div>
+    </div>
+
+    <div class="secondline_info">
+      <div class="humanrelation">
+        <div class="humanjelly_title">Relation til mennesker</div>
+        Hvad der adskiller denne art fra resten er, hvor lidt man ved om den.
+         Der findes i alt to optagelser af dyret, og næsten alle oplysninger om det er rent spekulative.
+        <p>Der er ikke gjort noget forsøg på at fange dette dyr og finde ud af mere om det, da dets population antages at være i de enkelte cifre.</p>
+      </div>
+      <div class="map">
+        <img src="img/jellymap.png" alt="Habitat of cosmic jellyfish" id="jellymap">
+      </div>
+    </div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

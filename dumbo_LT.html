@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Dambo astoņkājis</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+          <a href="about_LT.html" id="about_hover">Par mums</a>
+          <a href="crab_LT.html" id="crab_hover">Japānas zirnekļu krabis</a>
+          <a href="blobfish_LT.html" id="blob_hover">Blobzivs</a>
+          <a href="cosmicjelly_LT.html"id="jelly_hover">Kosmiskā medūza</a>
+          <a href="goblinshark_LT.html"id="shark_hover">Goblinhaizivs</a>
+          <a href="dumbo_LT.html"id="dumbo_hover">Dambo astoņkājis</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/pinkwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index_LT.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index_LT.html"><img src="img/pinklogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/dumbo.png" alt="dumbo octopus" id="dumbo_octapus_page">
+
+    <div class="animal_name_dumbo">
+      <h1>Dambo astoņkājis</h1>
+    </div></div>
+
+    <img src="img/dumbo.png"  width="100" id="scroll">
+
+     <!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Čau! Mans vārds ir Grimpoteuthis, bet cilvēki mani bieži sauc par Dambo Astoņkāji, jo es tiem atgādinu zilonīti Dambo no 1941. gada Disney filmas. 
+    <p> Es dzīvoju 1000 - 7000 metrus dziļi okeānā.  </p>
+    <p>Man garšo mazi tārpi, planktoni un gliemenes. </p>
+    <p>Es ļoti baidos no haizivīm, tādēļ bieži sevi maskēju saplūstot ar apkārtējo vidi.  </p>
+    
+  </div>
+  <div class="appear">
+    <div class="title_dumbo">Izskats</div>
+    Dambo astoņkājis ir zināms tā īpatnējās spuras dēļ, kas izskatās pēc austiņām. 
+    Šis dzīvnieks ir spējīgs nomainīt krāsu no rozā uz sarkanu, brūnu vai baltu. 
+    Viņi bieži sver vienu kilogramu un ir aptuveni 30 centimetrus gari. 
+    To viduvējais dzīves ilgums ir starp 3 un 5 gadiem. 
+    Tas peld izmentojot savas spuras virs tā galvas. Vēl viena īpatnēja lieta, kas ir Dambo astoņkājim, ir tā punktiņi uz ķermeņa, kas spēj noteikt gaismu. 
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humandumbo_title">Attiecības ar cilvēku</div>
+    Cilvēki nav bīstami šīm radībām, jo astoņkāji dzīvo parāk dziļi okeānā. 
+    Astoņkāju populācija ir pietiekami veselīga un nav uzskatāma par apdraudētu.
+  </div>
+  <div class="map">
+    <img src="img/dumbomap.png" alt="Habitat of dumbo octopus" id="dumbomap">
+  </div>
+</div>
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

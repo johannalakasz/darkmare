@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Dumbó polip</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+          <a href="about_HG.html" id="about_hover">Rólunk</a>
+          <a href="crab_HG.html" id="crab_hover">Óriás japán rák</a>
+          <a href="blobfish_HG.html" id="blob_hover">Bluggyhal</a>
+          <a href="cosmicjelly_HG.html"id="jelly_hover">Kozmikus medúza</a>
+          <a href="goblinshark_HG.html"id="shark_hover">Koboldcápa</a>
+          <a href="dumbo_HG.html"id="dumbo_hover">Dumbó polip</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/pinkwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="Index_HG.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="Index_HG.html"><img src="img/pinklogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/dumbo.png" alt="dumbo octopus" id="dumbo_octapus_page">
+
+    <div class="animal_name_dumbo">
+      <h1>Dumbó polip</h1>
+    </div></div>
+
+    <img src="img/dumbo.png"  width="100" id="scroll">
+
+     <!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Szia! A nevem Grimpoteuthis, de az emberek gyakran hívnak Dumbó polipnak, mert az 1941-ben megjelent Disney film bébielefántjára emlékeztetem őket. 
+    <p> 1000-től 7000 méter mélyen élek az óceánban.  </p>
+    <p>Apró férgekkel, planktonokkal és kagylókkal táplálkozom. </p>
+    <p>Annyira félek a cápáktól, hogy sokszor egybeolvadok a tengerfenék megjelenésével, hogy álcázzam magamat.    </p>
+    
+  </div>
+  <div class="appear">
+    <div class="title_dumbo">Megjelenés</div>
+    A dumbó polipok a feltűnő, fülszerű uszonyaik miatt ismertek, amelyek a szemük felett nyújtóznak. 
+    Ez az állat képes megváltoztatni teste színét rózsaszínről pirosra, barnáról fehérre. 
+    Általában egy kilogrammot nyom, hosszúsága pedig körülbelül 30 centiméter. 
+    Átlagos élettartamuk három és öt év között van. Nincs igazolva, hogy a dumbó polipok termelnek-e tintát mozgásuk segítésére, amely érthető, ha figyelembe vesszük élőhelyüket. 
+    Az uszonyainak mozgatásával úsznak. Egy másik különleges tulajdonságuk, hogy fehér foltok találhatóak közel a szemeik felett, amelyek a fényt érzékelik.
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humandumbo_title">Emberekkel való viszony</div>
+    A dumbó polipok nincsenek fenyegetettségnek kitéve az emberek által, mert annyira mélyen élnek az óceánban. Populációjuk egészen egészséges és nincsenek közel a kihaláshoz.
+  </div>
+  <div class="map">
+    <img src="img/dumbomap.png" alt="Habitat of dumbo octopus" id="dumbomap">
+  </div>
+</div>
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Kozmikus medúza </title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+        <a href="about_HG.html" id="about_hover">Rólunk</a>
+        <a href="crab_HG.html" id="crab_hover">Óriás japán rák</a>
+        <a href="blobfish_HG.html" id="blob_hover">Bluggyhal</a>
+        <a href="cosmicjelly_HG.html"id="jelly_hover">Kozmikus medúza</a>
+        <a href="goblinshark_HG.html"id="shark_hover">Koboldcápa</a>
+        <a href="dumbo_HG.html"id="dumbo_hover">Dumbó polip</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/yellowwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index_HG.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index_HG.html"><img src="img/yellowlogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/cosmicjelly.png" alt="cosmic jellyfish" id="cosmicjelly_page">
+
+    <div class="animal_name_jelly">
+      <h1>Kozmikus medúza</h1>
+    </div></div>
+    <img src="img/cosmicjelly.png"  width="100"  id="scroll">
+    <div class="bio_container">
+      <div class="bio_content">
+        Szia! Nekem nincs még tudományos nevem, annyira új felfedezés vagyok a világ számára, de szólíthatsz Kozmikus medúzának.
+        <p>Körülbelül 3000 méter mélyen élek az óceánban.</p>
+        <p>Képes vagyok megenni a testtömegem tízszeresét mindösszesen egy nap alatt és az apró állatok a kedvenc falatjaim.</p>
+        <p>Félek a saját létezésemtől.</p>
+      </div>
+      <div class="appear">
+        <div class="title_jelly">Megjelenés</div>
+        Mint a legtöbb medúza, ez a fenséges teremtmény is egy agy nélküli paca, ami a rengeteg hosszú és vékony csápjának mozgatásával lebeg.
+        <p>A szervei élénk színekben világítanak a sötétben, innen is származik az állat neve. A medúzák teste puha, zselészerű, amely beburkolja szerveiket. A teremtmény 6 sárga zsebbel rendelkezik az oldalán, amelyek sejthetően a szaporodó szervei.
+          Az állat közepén elhelyezkedik egy piros színű szerv is, amelyről az gondolják, a táplálkozásért és az emésztésért felel.
+      </div>
+    </div>
+
+    <div class="secondline_info">
+      <div class="humanrelation">
+        <div class="humanjelly_title">Emberekkel való viszony</div>
+        Ami megkülönbözteti ezt az állatot bármi mástól, az az, hogy mennyire kevés dolgot lehet tudni róla. Összesen kétszer jegyezték fel létezését és majdhogynem az összes információ a példányról csupán spekuláció.
+        <p>Egyetlen kísérlet sem történt még arra, hogy foglyul ejtsék az állatot, hogy több derülhessen ki róla, mert a populációja vélhetően egyszámjegyű.</p>
+      </div>
+      <div class="map">
+        <img src="img/jellymap.png" alt="Habitat of cosmic jellyfish" id="jellymap">
+      </div>
+    </div>
+
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

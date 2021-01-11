@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Dumbo blæksprutte</title>
+</head>
+<body>
+  <div class="navigation">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="contents">
+          <a href="about_DK.html" id="about_hover">Om Os</a>
+          <a href="crab_DK.html" id="crab_hover">Japansk edderkoppekrabbe</a>
+          <a href="blobfish_DK.html" id="blob_hover">Blobfisk</a>
+          <a href="cosmicjelly_DK.html"id="jelly_hover">Kosmisk vandmænd</a>
+          <a href="goblinshark_DK.html"id="shark_hover">Goblin Haj</a>
+          <a href="dumbo_DK.html"id="dumbo_hover">Dumbo blæksprutte</a>
+      </div>
+      </div>
+      <div id="main">
+        <div id="menu-toggle"  onclick="openNav()">
+           <img id="wave" src="img/pinkwave.png">
+        </div>
+     </div>
+  </div>
+        <!--return home-->
+        <div class="home">
+          <a href="index_DK.html" ><img id="home" src="img/home2.png"></a>
+      </div>
+        <!--logo on top-->
+<div class='logo1'>
+  <a href="index_DK.html"><img src="img/pinklogo.png" alt="logo" id="logo1"></a>
+</div>
+
+
+<!--creature in middle-->
+<div class="sea_animal">
+    <img src="img/dumbo.png" alt="dumbo octopus" id="dumbo_octapus_page">
+
+    <div class="animal_name_dumbo">
+      <h1>Dumbo blæksprutte</h1>
+    </div></div>
+
+    <img src="img/dumbo.png"  width="100" id="scroll">
+
+     <!--information-->
+<div class="bio_container">
+  <div class="bio_content">
+    Hej! Mit navn er Grimpoteuthis, men folk omtaler ofte mig som Dumbo blæksprutte , fordi jeg minder dem om elefanten, der hedder Dumbo, i en Disney-film fra 1941. 
+    <p> Jeg lever mellem 1000- 7000 meter dybt i havet  </p>
+    <p>Jeg elsker at spise små orme, planktoner og skaldyr. </p>
+    <p>Jeg er så bange for hajer, at jeg oftest camouflerer mig selv for at blande mig i havbundens udseende.  </p>
+    
+  </div>
+  <div class="appear">
+    <div class="title_dumbo">Udseende</div>
+    Dumbo blæksprutte er kendt for sin fremtrædende ørelignende finne, der strækker sig over øjnene.
+     Dette dyr er i stand til at ændre sin farve fra lyserød til rød, brun eller hvid.
+      De vejer normalt et kilogram, og deres længde er omkring 30 centimeter. Deres gennemsnitlige levetid er mellem tre og fem år.
+       Det er ikke bevist, at Dumbo-blæksprutten producerer blæk til jetfremdrivning, hvilket giver mening i betragtning af dets habitat.
+        Den svømmer ved hjælp af bevægelsen af dens finner.
+     En anden distinkt karakteristisk Dumbo-blæksprutte har deres hvide pletter tæt over deres øjne, som registrerer lys. 
+  </div>
+</div>
+
+<div class="secondline_info">
+  <div class="humanrelation">
+    <div class="humandumbo_title">Relation til mennesker</div>
+    Mennesker betragtes ikke som en trussel mod Dumbo-blæksprutter, fordi de lever så dybt i havet.
+    Antallet af Dumbo Dumbo-blæksprutter der lever er ret stor, og de betragtes ikke som truede.
+  </div>
+  <div class="map">
+    <img src="img/dumbomap.png" alt="Habitat of dumbo octopus" id="dumbomap">
+  </div>
+</div>
+
+ <!--opening navigation-->
+   <script>
+        AOS.init();
+       var navDrawer = false;
+     function openNav() {
+         if (navDrawer == false) {
+       document.getElementById("mySidenav").style.width = "100%";
+       navDrawer = true;  }
+         
+       else  {
+           closeNav()
+         }
+     }
+      function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       document.getElementById("main").style.marginLeft= "0";
+       navDrawer = false;
+     }
+     
+     </script>
+<script src="js/scroll.js"></script>
+</body>
+</html>
