@@ -150,19 +150,20 @@ html {
           box-sizing: border-box;
       }
       width: 53px;
-      height:39px ;
-      margin: 30px 0 0 30px;
+      height:50px ;
+      margin: 0 0 0 30px;
       position: -webkit-fixed;
       position: fixed;
       cursor: pointer;
-      z-index: 10;
+      z-index: 20;
     }
     #wave{
         width: 54px;
         height: 40px;
+        
     }
   }
-.home{
+ /*.home{
   z-index: 10;
   display: flex;
   justify-content: flex-end;
@@ -180,18 +181,98 @@ html {
     }
   }
 }
+*/
+
+// language menu
+.dropbtn_lang {
+//  background-color: rgba($color: #9B1B31, $alpha: 0.6);
+  background-color: colors(primary, light);
+  color: colors(primary, base);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 100px;
+  display: block;
+}
+
+
+.dropdown_lang {
+//  position: relative;
+//  display: inline-block;
+  max-width: 100px;
+  z-index: 11;
+  display: flex;
+//  justify-content: flex-end;
+  position: relative;
+    margin-top: 3vh;
+ //   margin-right: 1.5vw;
+  margin-left:92vw;
+  
+}
+
+.dropdown-content_lang {
+  display: none;
+  position: absolute;
+  background-color: colors(primary, textt);
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 8;
+  border-radius: 5px;
+  a:hover {background-color:#404040;}
+}
+
+.dropdown-content_lang a {
+  color: colors(primary, base);
+  padding: 10px;
+  font-family: 'Oswald';
+  text-transform: lowercase;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  border-radius: 5px;
+}
+
+
+.dropdown_lang:hover .dropdown-content_lang {display: block;}
+//.dropdown_lang:hover .dropbtn_lang {display:block;}
+
+@media screen and (max-width: 1400px){
+  .dropbtn_lang{
+    visibility: hidden;
+    margin-left:0vw;
+  }
+  .dropdown_lang{
+    visibility: hidden;
+    margin-left:0vw;
+  }
+  .dropdown-content_lang{
+    visibility: hidden;
+  }
+  }
+
+@at-root
 .main{
   .title{
     @media screen and (max-width: 1650px){
-      padding-top: 15vh;
+      padding-top: 10vh;
     }
     @media screen and (max-width: 1300px){
-      padding-top: 25vh;
+      padding-top: 20vh;
     }
     .logo_main{
-      padding-top:5%;
+      padding-top:2%;
     }
   }
+
 // triangle scroll
 .dive_deeper {
     text-align: center;
@@ -224,6 +305,7 @@ section {
 
 }
 //
+
 
 // positioning of species
 .sea_animals{
@@ -364,8 +446,18 @@ footer {
   }
 }
 
+.line_languages {
+  font-family: 'Roboto';
+  font-size: 1.4vh;
+  margin-left: 14vw;
+  margin-top: 3vh;
+}
 
-
+@media screen and (min-width: 1400px){
+  .line_languages{
+    visibility: hidden;
+  }
+}
 
 //subpages
 .animal_name_crab{
@@ -398,10 +490,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   height: 2vh;
-  padding-top:40px;
+  padding-top:-40px;
   position: relative;
   z-index: 1;
-  top: 0vh;
+  top: -3.5vh;
   left: 45%;
   margin-bottom: 2vh;
 }
@@ -600,7 +692,7 @@ footer {
 #japanese_crab_page {
   position: relative;
   z-index:1;
-  padding-top:3%;
+  padding-top:2%;
   padding-bottom: 5%;
   left:25%;
   width: 50vw;
@@ -609,7 +701,7 @@ footer {
 #blob_fish_page{
   position: relative;
   z-index:1;
-  padding-top:5%;
+  padding-top:3%;
   padding-bottom: 10%;
   left:25%;
   width: 50vw;
@@ -618,7 +710,7 @@ footer {
 #cosmicjelly_page{
   position: relative;
   z-index:1;
-  padding-top:10%;
+  padding-top:8%;
   padding-bottom: 10%;
   left:25%;
   width: 50vw;
@@ -627,7 +719,7 @@ footer {
 #goblinskark_page{
   position: relative;
   z-index:1;
-  padding-top:5%;
+  padding-top:3.5%;
   padding-bottom: 10%;
   left:20%;
   width: 60vw;
@@ -636,7 +728,7 @@ footer {
 #dumbo_octapus_page{
   position: relative;
   z-index:1;
-  padding-top:5%;
+  padding-top:2%;
   padding-bottom: 5%;
   left:30%;
   width: 37vw;
@@ -646,7 +738,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 15%;
+  padding-top: 10%;
   #memb{
     height: 200px;
     padding:20px 20px; 

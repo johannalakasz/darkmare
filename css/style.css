@@ -131,12 +131,12 @@ html {
 
 .navigation #menu-toggle {
   width: 53px;
-  height: 39px;
-  margin: 30px 0 0 30px;
+  height: 50px;
+  margin: 0 0 0 30px;
   position: -webkit-fixed;
   position: fixed;
   cursor: pointer;
-  z-index: 10;
+  z-index: 20;
 }
 
 .navigation #menu-toggle * {
@@ -151,44 +151,115 @@ html {
   height: 40px;
 }
 
-.home {
+/*.home{
   z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+    top: 30;
+    right: 0;
+  #home{
+    margin:30px 30px 0 0;
+    width: 54px;
+    
+  }
+  @media screen and (max-width: 600px){
+    #home{
+      visibility: hidden;
+    }
+  }
+}
+*/
+.dropbtn_lang {
+  background-color: #404040;
+  color: #191A1C;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 100px;
+  display: block;
+}
+
+.dropdown_lang {
+  max-width: 100px;
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: fixed;
-  top: 30;
-  right: 0;
+  position: relative;
+  margin-top: 3vh;
+  margin-left: 92vw;
 }
 
-.home #home {
-  margin: 30px 30px 0 0;
-  width: 54px;
+.dropdown-content_lang {
+  display: none;
+  position: absolute;
+  background-color: #AFAFAF;
+  width: 100px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 8;
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
-  .home #home {
+.dropdown-content_lang a:hover {
+  background-color: #404040;
+}
+
+.dropdown-content_lang a {
+  color: #191A1C;
+  padding: 10px;
+  font-family: 'Oswald';
+  text-transform: lowercase;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+}
+
+.dropdown_lang:hover .dropdown-content_lang {
+  display: block;
+}
+
+@media screen and (max-width: 1400px) {
+  .dropbtn_lang {
+    visibility: hidden;
+    margin-left: 0vw;
+  }
+  .dropdown_lang {
+    visibility: hidden;
+    margin-left: 0vw;
+  }
+  .dropdown-content_lang {
     visibility: hidden;
   }
 }
 
 @media screen and (max-width: 1650px) {
   .main .title {
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
 }
 
 @media screen and (max-width: 1300px) {
   .main .title {
-    padding-top: 25vh;
+    padding-top: 20vh;
   }
 }
 
 .main .title .logo_main {
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .main .dive_deeper {
@@ -370,6 +441,19 @@ footer .creators .creator_accounts {
   padding-right: 5px;
 }
 
+.line_languages {
+  font-family: 'Roboto';
+  font-size: 1.4vh;
+  margin-left: 14vw;
+  margin-top: 3vh;
+}
+
+@media screen and (min-width: 1400px) {
+  .line_languages {
+    visibility: hidden;
+  }
+}
+
 .animal_name_crab {
   text-align: center;
   position: relative;
@@ -408,10 +492,10 @@ footer .creators .creator_accounts {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 2vh;
-  padding-top: 40px;
+  padding-top: -40px;
   position: relative;
   z-index: 1;
-  top: 0vh;
+  top: -3.5vh;
   left: 45%;
   margin-bottom: 2vh;
 }
@@ -643,7 +727,7 @@ footer .creators .creator_accounts {
 #japanese_crab_page {
   position: relative;
   z-index: 1;
-  padding-top: 3%;
+  padding-top: 2%;
   padding-bottom: 5%;
   left: 25%;
   width: 50vw;
@@ -652,7 +736,7 @@ footer .creators .creator_accounts {
 #blob_fish_page {
   position: relative;
   z-index: 1;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 10%;
   left: 25%;
   width: 50vw;
@@ -661,7 +745,7 @@ footer .creators .creator_accounts {
 #cosmicjelly_page {
   position: relative;
   z-index: 1;
-  padding-top: 10%;
+  padding-top: 8%;
   padding-bottom: 10%;
   left: 25%;
   width: 50vw;
@@ -670,7 +754,7 @@ footer .creators .creator_accounts {
 #goblinskark_page {
   position: relative;
   z-index: 1;
-  padding-top: 5%;
+  padding-top: 3.5%;
   padding-bottom: 10%;
   left: 20%;
   width: 60vw;
@@ -679,7 +763,7 @@ footer .creators .creator_accounts {
 #dumbo_octapus_page {
   position: relative;
   z-index: 1;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 5%;
   left: 30%;
   width: 37vw;
@@ -694,7 +778,7 @@ footer .creators .creator_accounts {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 .team #memb {
